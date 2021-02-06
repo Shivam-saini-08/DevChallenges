@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+
+  <link rel="icon" href="devchallenges.png" />
+  <!-- Google Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@400;700&family=Montserrat:wght@300;500;600&display=swap"
+    rel="stylesheet">
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="./style/main.css">
+</head>
+
+<body>
+  <div class="body-wrapper">
+    <header class="header-nav">
+      <!-- =================================== -->
+      <div class="logo">
+        <p>This Interior</p>
+      </div>
+      <!-- =================================== -->
+      <div class="ham-menu">
+        <span class="material-icons open">
+          menu
+        </span>
+        <span class="material-icons close">
+          close
+        </span>
+      </div>
+      <!-- ================================== -->
+      <ul class="nav-ul">
+        <li><a href="">Home</a></li>
+        <li><a href="">Collection</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+
+    </header>
+    <!-- ============================== -->
+    <main class="content-wrapper">
+      <div class="content">
+        <h1>Modern interior</h1>
+        <p>A full-Service residential & commercial interior design and staging company offering professional organizing
+          & eco-services.</p>
+        <p><a href="" class="strong"> Read more <span>&rarr;</span></a></p>
+      </div>
+      <div class="image-container">
+        <img src="./images/photo1.png" alt="">
+        <div class="about">
+          <div class="about-head">
+            <img src="./images/photo2.png" alt="avtar" class="avtar">
+            <span>
+              <p class="strong sm">Aliza Webber</p>
+              <p class="strong x-sm">Interior designer</p>
+            </span>
+          </div>
+          <p class="lg">Designed in 2020 by Aliza Webber</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <hr>
+      <p class="code-by">Shivam @ DevChallenges.io</p>
+    </footer>
+  </div>
+
+  <script>
+    const hamMenu = document.querySelector('.ham-menu');
+    const headerNav = document.querySelector('.header-nav');
+
+    hamMenu.addEventListener('click', (e) => {
+      headerNav.classList.toggle('active');
+    })
+  </script>
+
+
+
+
+
+</body>
+
+</html>

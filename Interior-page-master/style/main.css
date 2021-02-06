@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2.5% 4%;
+  position: relative;
+}
+
+.header-nav .logo {
+  border: 1px solid #fff;
+  font-family: "Crimson Pro", serif;
+  padding: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.header-nav .logo:hover {
+  background: #fff;
+  color: #181719;
+}
+
+.header-nav .ham-menu {
+  z-index: 2;
+}
+
+.header-nav .ham-menu .material-icons {
+  font-size: 40px;
+  position: relative;
+  cursor: pointer;
+}
+
+.header-nav .ham-menu .close {
+  display: none;
+}
+
+.header-nav .nav-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  padding-block: 10rem;
+  background: #181719;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+}
+
+.header-nav .nav-ul li {
+  padding-block: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.header-nav .nav-ul li a {
+  color: #fff;
+}
+
+.header-nav .nav-ul li:nth-child(1) {
+  font-weight: 700;
+}
+
+.header-nav .nav-ul li:hover {
+  text-decoration: underline;
+}
+
+.header-nav.active .open {
+  display: none;
+}
+
+.header-nav.active .close {
+  display: block;
+}
+
+.header-nav.active .nav-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 2;
+}
+
+.body-wrapper {
+  background-color: #181719;
+  color: #fff;
+  min-height: 100vh;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+}
+
+.body-wrapper .content-wrapper {
+  display: -ms-grid;
+  display: grid;
+  padding: 2% 4%;
+  gap: 10px;
+}
+
+.body-wrapper .content-wrapper .content h1 {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.body-wrapper .content-wrapper .content p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  margin-bottom: 30px;
+  width: 250px;
+}
+
+.body-wrapper .content-wrapper .content .strong {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.body-wrapper .content-wrapper .content .strong span {
+  margin-left: 5px;
+}
+
+.body-wrapper .content-wrapper .image-container {
+  position: relative;
+}
+
+.body-wrapper .content-wrapper .image-container img {
+  width: 100%;
+}
+
+.body-wrapper .content-wrapper .image-container .about {
+  width: 85%;
+  margin: auto;
+  background: #181719;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  padding-block: 1rem;
+  padding-inline: 1rem;
+  position: absolute;
+  top: 80%;
+  left: 10%;
+}
+
+.body-wrapper .content-wrapper .image-container .about .about-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.body-wrapper .content-wrapper .image-container .about .about-head .avtar {
+  width: 40px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.body-wrapper .content-wrapper .image-container .about .about-head span .sm {
+  font-size: 12px;
+}
+
+.body-wrapper .content-wrapper .image-container .about .about-head span .x-sm {
+  font-size: 10px;
+  color: #828282;
+}
+
+.body-wrapper .content-wrapper .image-container .about .lg {
+  width: 55%;
+  font-size: 20px;
+}
+
+footer {
+  margin-top: 5rem;
+}
+
+footer hr {
+  color: #828282;
+  margin: auto;
+  width: 80%;
+  height: .1px;
+}
+
+footer .code-by {
+  text-align: center;
+  padding: .5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .content-wrapper {
+    -ms-grid-columns: .8fr 1fr;
+        grid-template-columns: .8fr 1fr;
+  }
+  footer hr {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header-nav .ham-menu {
+    display: none;
+  }
+  .header-nav .nav-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: flex;
+    padding-block: 0rem;
+    background: #181719;
+    width: 48%;
+    height: 0;
+    position: static;
+  }
+  .header-nav .nav-ul li:nth-child(4) {
+    padding-right: 0;
+  }
+  .body-wrapper .content-wrapper {
+    -ms-grid-columns: .8fr 1fr;
+        grid-template-columns: .8fr 1fr;
+  }
+  .body-wrapper .content-wrapper .content h1 {
+    font-size: 48px;
+  }
+  .body-wrapper .content-wrapper .content p {
+    font-size: 18px;
+  }
+  .body-wrapper .content-wrapper .image-container .about {
+    width: 55%;
+    left: 35%;
+  }
+  .body-wrapper .content-wrapper .image-container .about .about-head .avtar {
+    width: 45px;
+  }
+  .body-wrapper .content-wrapper .image-container .about .about-head span .sm {
+    font-size: 14px;
+  }
+  .body-wrapper .content-wrapper .image-container .about .about-head span .x-sm {
+    font-size: 12px;
+  }
+  .body-wrapper .content-wrapper .image-container .about .lg {
+    width: 65%;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .body-wrapper .content-wrapper .image-container .about {
+    width: 50%;
+    left: 40%;
+  }
+  .body-wrapper .content-wrapper .image-container .about .lg {
+    width: 70%;
+    font-size: 24px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

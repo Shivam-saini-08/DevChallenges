@@ -1,0 +1,13 @@
+//media query for tablet
+
+@media screen and (min-width: 768px) {
+    @include tablet-layout();
+}
+//media query or laptop/desktop
+@media screen and (min-width: 1024px) {
+    @include laptop-header();
+    @include laptop-layout();
+}
+@media screen and (min-width: 1300px) {
+    @include desktop-layout();
+}
